@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Portafolio SPA Azul</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> Fernanda </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home" data-link>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stack" data-link>Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-link>Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-link>Contacto</a></li>
+          <li class="nav-item">
+            <button id="theme-toggle" class="btn btn-outline-light ms-2">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secciones -->
+  <section id="home" class="py-5 mt-5">
+    <div class="image-container me-4 mb-3">
+    <img src="./img/perfil-3.png" alt="perfil" class="rounded-circle img-fluid" style="max-width: 300px;">
+  </div>
+    <div class="container text-center" id="homeBody">
+      <h1>Bienvenido </h1>
+      <p class="lead">Soy Fernanda una desarrolladora Full Stack en formación; actualmente estoy cursando un bootcampo en el cual 
+        he desarrollado proyectos de e-commerce y API REST. tambien trabaje con PostgreSQL y Node.  creo fielmente que la perseverancia y disiplina son el camino para lograr tus objetivos.</p>
+    </div>
+  </section>
+
+  <section id="stack" class="py-5">
+    <div class="container text-center">
+      <h2>Stack Tecnológico</h2>
+      <div class="row justify-content-center g-4 mt-3">
+        <div class="col-4 col-sm-2">
+          <img src="./img/blue-html5-2.png" class="tech-logo mb-2" alt="HTML">
+          <p>HTML5</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/css3.png" class="tech-logo mb-2" alt="CSS">
+          <p>CSS3</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/blue-boostrap.png" class="tech-logo mb-2" alt="Bootstrap">
+          <p>Bootstrap 5</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/blue-js.png" class="tech-logo mb-2" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/blue-node.png" class="tech-logo mb-2" alt="Node.js">
+          <p>Node.js</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/postgress.png" class="tech-logo mb-2" alt="PostgreSQL">
+          <p>PostgreSQL</p>
+        </div>
+         <div class="col-4 col-sm-2">
+          <img src="./img/blue-git.png" class="tech-logo mb-2" alt="PostgreSQL">
+          <p>Git</p>
+        </div>
+        <div class="col-4 col-sm-2">
+          <img src="./img/github.png" class="tech-logo mb-2" alt="PostgreSQL">
+          <p>GitHub Pages</p>
+        </div>
+       <div class="col-4 col-sm-2">
+          <img src="./img/visual.png" class="tech-logo mb-2" alt="PostgreSQL">
+          <p>Visual Studio Code</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="projects-container">
+        <!-- Las cards se renderizan desde app.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container" id="contactBody">
+      <h2>Contacto</h2>
+      
+      <a href="https://www.linkedin.com/in/fernanda-alvarez-fronend/"><img src="./img/linke-din.png" alt="linkedin" id="logoLinke"></a>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="email" placeholder="Tu correo">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">© 2026 - Fernanda Álvarez Full Stack Trainee </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/app.js" defer></script>
+</body>
+</html>

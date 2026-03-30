@@ -1,0 +1,138 @@
+
+:root {
+  --text-color: #451996;
+  --card-bg: #a88cdb8e;
+  --card-text: #07229c;
+  --navbar-bg: #5e30b4;
+  --footer-bg: #5e30b4;
+  --btn-bg: #2d149b;
+  --btn-text: #ffffff;
+  /*--bg-gradient: linear-gradient(to bottom, ##dbcffc, #dbcffc)*/
+}
+
+[data-theme="dark"] {
+  --text-color: #cce0ff;
+  --card-bg: #102b5c;
+  --card-text: #cce0ff;
+  --navbar-bg: #102c5e;
+  --footer-bg: #102c5e;
+  --btn-bg: #1a6cff;
+  --btn-text: #ffffff;
+  --bg-gradient: linear-gradient(to bottom, #0a1f44, #102c5e);
+}
+
+/* 
+   BODY Y TRANSICIONES*/
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 
+   NAVBAR */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  transition: background-color 0.3s;
+}
+#home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:20px;
+}
+#homeBody{
+  display:flex;
+  flex-direction: column;
+  gap:30px;
+  max-width: 800px;
+  text-align: justify;
+  padding: 10px;
+}
+.image-container img {
+  margin-left: 100px;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  font-style: italic;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  text-align: justify;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(49,116,216,0.6);
+}
+
+/* Imagen de la card */
+.img-card {
+  max-height: 160px;
+  width: auto;
+  object-fit: cover;
+}
+a>img{
+  max-width: 40px;
+}
+/* Botón ver proyecto */
+.btn-ver , .btn-primary{
+  background: linear-gradient(130deg, rgb(89, 101, 206), rgb(29, 27, 179));
+  border: 0;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.btn-ver:hover {
+  background: #74c7ff;
+}
+
+/* STACK TECNOLÓGICO */
+.tech-logo {
+  max-width: 80px;
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.tech-logo:hover {
+  transform: scale(1.1);
+}
+
+#stack p {
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--card-text);
+}
+
+/* TIPOGRAFÍA */
+h1, h2, h5, p {
+  transition: color 0.3s;
+}
+.lead{
+  font-style: italic;
+}
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
+#contactBody >form{
+  max-width: 800px;
+  padding:50px;
+}
