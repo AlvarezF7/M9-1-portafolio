@@ -48,6 +48,7 @@ body {
   gap:30px;
   max-width: 800px;
   text-align: justify;
+  font-style: italic;
   padding: 10px;
 }
 .image-container img {
@@ -124,9 +125,7 @@ a>img{
 h1, h2, h5, p {
   transition: color 0.3s;
 }
-.lead{
-  font-style: italic;
-}
+
 /* SCROLL SUAVE */
 html {
   scroll-behavior: smooth;
