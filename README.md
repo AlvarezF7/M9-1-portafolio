@@ -36,7 +36,8 @@ Este proyectoc corresponde al protafolio del bootcamp Full Stack Javascript Trai
 - No requiere servidor, se puede abrir directamente en el navegador.
 
 ## Ver Proyecto
-    [Link Proyecto](https://alvarezf7.github.io/M9-1-portafolio/)
+
+[Link Proyecto](https://alvarezf7.github.io/M9-1-portafolio/)
 
 ## Autor
 Fernanda Álvarez para curso Fullstack Javascript Sence.
