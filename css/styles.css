@@ -1,12 +1,13 @@
 
 :root {
   --text-color: #451996;
-  --card-bg: #a88cdb8e;
-  --card-text: #07229c;
+  --card-bg: #f6f1ff;
+  --card-text: #051e8f;
   --navbar-bg: #5e30b4;
   --footer-bg: #5e30b4;
-  --btn-bg: #2d149b;
+  --btn-bg: #8221c2;
   --btn-text: #ffffff;
+  --tech-logo:var(--footer-bg);
   /*--bg-gradient: linear-gradient(to bottom, ##dbcffc, #dbcffc)*/
 }
 
@@ -38,7 +39,8 @@ body {
 }
 #home{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   padding:20px;
 }
@@ -49,10 +51,10 @@ body {
   max-width: 800px;
   text-align: justify;
   font-style: italic;
-  padding: 10px;
+  padding: auto;
 }
 .image-container img {
-  margin-left: 100px;
+  margin-left: auto;
   width: 100%;
   object-fit: cover;
 
@@ -80,7 +82,8 @@ footer {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(49,116,216,0.6);
+  /*box-shadow: 0 8px 20px rgba(49,116,216,0.6);*/
+  box-shadow: 0 8px 20px rgba(137, 206, 252, 0.884);
 }
 
 /* Imagen de la card */
@@ -114,7 +117,7 @@ a>img{
 .tech-logo:hover {
   transform: scale(1.1);
 }
-
+ 
 #stack p {
   margin-top: 5px;
   font-weight: bold;
@@ -130,8 +133,31 @@ h1, h2, h5, p {
 html {
   scroll-behavior: smooth;
 }
+#contact{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
 
-#contactBody >form{
-  max-width: 800px;
-  padding:50px;
+}
+#contactBody{
+  
+  max-width: auto;
+  align-items: center;
+  padding:20px;   
+  /*background-color: #1a6aff59;*/
+}
+/* form*/
+#contacto{
+  max-width:800px;
+  border-radius: 10px;
+  padding: 40px;
+ 
+  text-align: start;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  gap:10px;
+}
+#contacto:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(137, 206, 252, 0.884);
 }
