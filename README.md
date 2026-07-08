@@ -1,7 +1,7 @@
 # Portafolio 
 
 ## Descripción
-Este proyectoc corresponde al protafolio del bootcamp Full Stack Javascript Trainee,  su  objetivo es mostrar algunos de los proyectos desarrollados  durante el curso utilizando HTML5, HTML, CSS, JavaScript,Node.js, Bootstrap y postgreSQL. 
+Este proyecto corresponde al portafolio del bootcamp Full Stack Javascript Trainee,  su  objetivo es mostrar algunos de los proyectos desarrollados  durante el curso utilizando HTML5, HTML, CSS, JavaScript, Node.js, Bootstrap y postgreSQL. 
 
 
 ## Tecnologías
