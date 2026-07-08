@@ -12,7 +12,7 @@
 }
 
 [data-theme="dark"] {
-  --text-color: #cce0ff;
+  --text-color: #dcfaf5;
   --card-bg: #102b5c;
   --card-text: #cce0ff;
   --navbar-bg: #102c5e;
@@ -133,31 +133,33 @@ h1, h2, h5, p {
 html {
   scroll-behavior: smooth;
 }
-#contact{
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
 
-}
-#contactBody{
-  
-  max-width: auto;
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding:20px;   
-  /*background-color: #1a6aff59;*/
+  text-align: center;
 }
-/* form*/
-#contacto{
-  max-width:800px;
+
+.contactBody{
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+#form{
+  width: 100%;
+  max-width: 800px;
   border-radius: 10px;
   padding: 40px;
- 
+  Gap:10px;
+  background-color: #1addff4b;
   text-align: start;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  gap:10px;
 }
-#contacto:hover{
+#form:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(137, 206, 252, 0.884);
+  box-shadow: 0 8px 20px rgba(154, 215, 255, 0.911);
 }
+
+
